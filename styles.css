@@ -2,6 +2,11 @@ body {
     display: flex;
     background-color: #eaf3ee;
     flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: medium;
 }
 
 img {
@@ -27,7 +32,6 @@ img {
     position: relative;
     top: 10%;
     right: 25%;
-    transition: 0.3s;
 }
 
 #searchBar {
@@ -88,6 +92,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     height: 100%;
     width: 20%;
     border-color: #8B8C49;
@@ -119,6 +124,7 @@ img {
     width: 95%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
+    font-size: xx-large;
 }
 
 #wineButton:hover {
@@ -129,23 +135,25 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    gap: 20px;
+    gap: 3%;
     align-items: flex-start;
-    /* background-color: aqua; */
     height: 100vh;
     width: 100vw;
 }
 
 .drinkButton {
     display: flex;
+    text-align: center;
     justify-content: center;
     align-items: center;
     border-radius: 5%;
     background-color: white;
+    min-width: 350px;
     height: 200px;
-    width: 300px;
+    width: 26.5%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
+    font-size: xx-large;
 
 }
 
@@ -201,6 +209,10 @@ img {
     background-position: center;
 }
 
+#sideMenu {
+    display: none;
+}
+
 
 
 
@@ -219,9 +231,17 @@ img {
     #hamburgerButton {
         display: inline;
         position: relative;
-        right: 47%;
-        bottom: 30%;
+        right: 38%;
+        bottom: 22%;
 
+    }
+
+    #hamburgerButtonIcon {
+        display: inline;
+    }
+
+    #hamburgerButton:active {
+        right: 42%;
     }
 
     #searchBar {
@@ -230,20 +250,18 @@ img {
 
     #shoppingCart {
         top: 25%;
-        left: 25%;
+        left: 27%;
     }
 
     #userLogo {
         top: 25%;
-        left: 33%;
+        left: -30%;
     }
 
     #magnifyingGlass {
-        top: 25%;
-        max-width: 40px;
-        right: 30%;
+        display: none;
+        margin-left: 15px;
     }
-
 
 
     .drinkButton {
@@ -257,6 +275,63 @@ img {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
         transition: 0.3s;
 
+    }
+
+    #sideMenuX {
+        position: relative;
+        transition: 0.3s;
+        margin-top: 10px;
+        left: 85%;
+    }
+
+    #sideMenuX:hover {
+        filter: drop-shadow(2px 3px 3px rgb(0, 0, 0, 0.8));
+    }
+
+    #sideMenu {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        background-color: #eaf3ee;
+        box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 1);
+        border-color: #696A42;
+        border-style: none solid none none;
+        border-width: 12px;
+        height: 100vh;
+        width: 70vw;
+        display: inline;
+    }
+
+    #sideMenu:active {
+        display: none;
+    }
+
+    .sideMenuButton {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-color: #eaf3ee;
+        height: 6vw;
+        display: flex;
+        align-items: center;
+        padding-left: 15px;
+        transition: 0.3s;
+    }
+
+    .sideMenuButton:hover {
+        background-color: #B8D3C4;
+    }
+
+    #sideMenuShop {
+        background-color: #B8D3C4;
+    }
+
+    #sideMenuMag {
+        margin-top: 5px;
+        margin-left: 15px;
+        transition: 0.3s;
+    }
+
+    #sideMenuMag:hover {
+        filter: drop-shadow(2px 3px 3px rgb(0, 0, 0, 0.8));
     }
 
 }
