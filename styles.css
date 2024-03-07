@@ -7,6 +7,7 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     font-size: medium;
+    margin-bottom: 100px;
 }
 
 img {
@@ -309,7 +310,7 @@ img {
         z-index: 0;
     }
 
-    #sideMenu:active {
+    #sideMenu:visited {
         display: none;
     }
 
